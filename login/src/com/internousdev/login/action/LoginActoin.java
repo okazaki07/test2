@@ -1,9 +1,12 @@
 package com.internousdev.login.action;
+
 import java.sql.SQLException;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
+import com.internousdev.login.dao.LoginDAO;
+import com.internousdev.login.dto.LoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class LoginActoin extends ActionSupport implements SessionAware {
@@ -13,7 +16,7 @@ public class LoginActoin extends ActionSupport implements SessionAware {
 		public String execute() throws SQLException {
 			String ret = ERROR;
 			LoginDAO dao = new LoginDAO();
-			LoginDAO dto = new LoginDTO();
+			LoginDTO dto = new LoginDTO();
 
 			dto = dao.select(name,password);
 			if(name.equals(dto.getName())){
@@ -21,7 +24,7 @@ public class LoginActoin extends ActionSupport implements SessionAware {
 						ret = SUCCESS;
 				}
 			}
-			session.put("name,",dto.getName());
+			session.put("name",dto.getName());
 			return ret;
 			}
 		public String getName(){

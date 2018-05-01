@@ -13,5 +13,5 @@ password varchar(255)
 insert into user values
 (1,"taro","123"),
 (2,"jiro","123"),
-(3,"hanako","123");
+(3,"hanako","123"),
 (4,"soburo","123");
