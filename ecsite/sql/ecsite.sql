@@ -19,7 +19,7 @@ create table item_info_transaction(
 	id int not null primary key auto_increment,
 	item_name varchar(30),
 	item_price int,
-	item_stock int,
+	item_count int,
 	insert_date datetime,
 	update_date datetime
 	);
@@ -35,5 +35,5 @@ create table user_buy_item_transaction(
 	delete_date datetime
 	);
 
-INSERT INTO item_info_transaction(item_name, item_price, item_stock) VALUES("ノートBook",100,50);
+INSERT INTO item_info_transaction(item_name, item_price, item_count) VALUES("ノートBook",100,50);
 INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("internous","internous01","test");

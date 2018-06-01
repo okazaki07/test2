@@ -39,7 +39,7 @@
 		#header {
 		width: 100%;
 		height: 80px;
-		background-color: black;
+		background-color: #F0F8F7;
 		}
 		#main {
 		width: 100%;
@@ -49,7 +49,7 @@
 		#footer {
 		width: 100%;
 		height: 80px;
-		background-color: black;
+		background-color: #F0F8F7;
 		clear:both;
 		}
 		#text-link {
@@ -74,7 +74,8 @@
 			<p>BuyItem</p>
 		</div>
 		<div>
-			<s:form>
+			<s:form action="BuyItemConfirmAction">
+			<table>
 			<tr>
 				<td>商品名</td>
 					<td><s:property value="session.buyItem_name" /></td>
@@ -92,17 +93,10 @@
 				<td><s:property value="session.pay" /></td>
 			</tr>
 			<tr>
-				<td><br></td>
+				<td><s:submit value="完了" /></td>
 			</tr>
-			<tr>
-				<td><input type="button" value="戻る" onclick="submitAction('HomeAction')" /></td>
-				<td><input type="button" value="完了" onclick="submitAction('BuyItemConfirmAction')" /></td>
-			</tr>
+			</table>
 			</s:form>
-		<div>
-			<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
-			<p>マイぺージは<a href='<s:url action="MyPageAction" />'>こちら</a></p>
-		</div>
 <div id="footer">
 		<div id="pr">
 		</div>

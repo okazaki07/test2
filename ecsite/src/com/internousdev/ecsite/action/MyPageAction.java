@@ -33,6 +33,7 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 		}
 		String result = SUCCESS;
 		return result;
+		
 	}
 	public void delete() throws SQLException {
 		String item_transaction_id = session.get("id").toString();

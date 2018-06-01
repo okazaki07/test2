@@ -10,7 +10,7 @@
 	<meta http-equiv="imagetoolber" content="no" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<title>BuyItem画面</title>
+	<title>BuyItemComplete画面</title>
 
 	<style type="text/css">
 	/*========TAG LAYOUT========*/
@@ -57,4 +57,25 @@
 		}
 </style>
 </head>
+<body>
+	<div id="header">
+		<div id="pr">
+		</div>
+	</div>
+	<div id="main">
+		<div id="top">
+			<p>BuyItemComplete</p>
+		</div>
+		<div>
+			<p>購入手続きが完了致しました。</p>
+			<div>
+				<a href='<s:url action="MyPageAction"/>'>マイページ</a><span>から購入履歴の確認が可能です。</span>
+			</div>
+		</div>
+	<div id="footer">
+		<div id="pr">
+		</div>
+	</div>
+	</div>
+</body>
 </html>

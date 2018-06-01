@@ -38,7 +38,7 @@
 		#header {
 		width: 100%;
 		height: 80px;
-		background-color: black;
+		background-color: #F0F8F7;
 		}
 		#main {
 		width: 100%;
@@ -48,7 +48,7 @@
 		#footer {
 		width: 100%;
 		height: 80px;
-		background-color: black;
+		background-color: #F0F8F7;
 		clear:both;
 		}
 		#text-link {
@@ -67,11 +67,26 @@
 			<p>Login</p>
 		</div>
 		<div>
-			<h3>商品を購入する際にはログインをお願いします。</h3>
+			<h3>商品を購入する際はログインをお願いします。</h3>
 			<s:form action="LoginAction">
-				<s:textfield name="loginUserId"/>
-				<s:password name="loginPassword"/>
+			<table>
+			<tr>
+				<td><label>ログインID:</label></td>
+				<td><s:textfield name="loginUserId"/></td>
+
+				<td><label>ログインPASS:</label></td>
+				<td><s:password name="loginPassword"/></td>
+
+
+		<tr>
+			<td><label>名前:</label></td>
+			<td><input type="text" name="userName" value=""/></td>
+		</tr>
+
+
 				<s:submit value="ログイン"/>
+			</tr>
+			</table>
 			</s:form>
 			<br/>
 			<div id="text-link">

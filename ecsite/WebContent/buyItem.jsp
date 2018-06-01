@@ -10,6 +10,7 @@
 	<meta http-equiv="imagetoolber" content="no" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
+
 	<title>BuyItem画面</title>
 
 	<style type="text/css">
@@ -38,7 +39,7 @@
 		#header {
 		width: 100%;
 		height: 80px;
-		background-color: black;
+		background-color: #F0F8F7;
 		}
 		#main {
 		width: 100%;
@@ -48,7 +49,7 @@
 		#footer {
 		width: 100%;
 		height: 80px;
-		background-color: black;
+		background-color: #F0F8F7;
 		clear:both;
 		}
 		#text-link {

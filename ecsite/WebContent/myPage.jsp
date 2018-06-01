@@ -22,7 +22,8 @@
 		font-family:Verdana, Helvetica, sans-serif;
 		font-size:12px;
 		color:#333;
-		background:#fff;
+		background:#fff;]
+
 		}
 		table {
 		text-align:center;
@@ -38,7 +39,7 @@
 		#header {
 		width: 100%;
 		height: 80px;
-		background-color: black;
+		background-color: #F0F8F7;
 		}
 		#main {
 		width: 100%;
@@ -48,7 +49,7 @@
 		#footer {
 		width: 100%;
 		height: 80px;
-		background-color: black;
+		background-color: #F0F8F7;
 		clear:both;
 		position: fixed;
 		}

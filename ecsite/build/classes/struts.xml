@@ -62,6 +62,7 @@ method="execute">
 <action name="LogoutAction" class="com.internousdev.ecsite.action.LogoutAction"
 method="execute">
 <result name="success">home.jsp</result>
+
 </action>
 
 
